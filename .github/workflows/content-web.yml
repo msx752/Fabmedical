@@ -33,7 +33,6 @@
         helm chart push ${{ env.containerRegistry }}/helm/content-web:v${{ env.tag }}
       env:
         HELM_EXPERIMENTAL_OCI: 1
-        
   aks-deployment:
     name: AKS Deployment
     runs-on: ubuntu-latest
